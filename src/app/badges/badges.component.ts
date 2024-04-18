@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrl: './badges.component.css'
 })
 export class BadgesComponent {
-
+  notificationValue = 2
 }

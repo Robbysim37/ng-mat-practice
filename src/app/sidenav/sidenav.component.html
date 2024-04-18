@@ -1,0 +1,8 @@
+<mat-sidenav-container>
+    <!-- #sidenav is a template reference to sidenav component, allowing for function
+    calls that can open or close the sidenav -->
+    <mat-sidenav #sidenav [(opened)]="isOpened">Sidenav</mat-sidenav>
+    <mat-sidenav-content>Main
+        <button (click)="isOpened = !isOpened">toggleIsOpened</button>
+    </mat-sidenav-content>
+</mat-sidenav-container>

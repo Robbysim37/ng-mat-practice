@@ -10,6 +10,11 @@ import { TypographyComponent } from './typography/typography.component';
 import { ButtonComponent } from './button/button.component';
 import { IconsComponent } from './icons/icons.component';
 import { BadgesComponent } from './badges/badges.component';
+import { ProgressSpinnerComponent } from './progress-spinner/progress-spinner.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { SidenavComponent } from './sidenav/sidenav.component';
+
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,7 +23,10 @@ import { BadgesComponent } from './badges/badges.component';
     TypographyComponent,
     ButtonComponent,
     IconsComponent,
-    BadgesComponent
+    BadgesComponent,
+    ProgressSpinnerComponent,
+    NavbarComponent,
+    SidenavComponent
   ],
   imports: [
     BrowserModule,
