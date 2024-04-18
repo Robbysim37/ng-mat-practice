@@ -1,5 +1,8 @@
+
+<!-- [matBadge] = *name of Variable* -->
+
 <div>
-    <span matBadge="5">Notifications</span>
+    <span [matBadge]="notificationValue" [matBadgeHidden]="notificationValue === 0">Notifications</span>
 </div>
 <div>
     <span matBadge="5" matBadgePosition="before">Notifications</span>
@@ -10,3 +13,13 @@
 <div>
     <span matBadge="5" matBadgePosition="above before">Notifications</span>
 </div>
+<div>
+    <span matBadge="5" matBadgeColor="warn">Notifications</span>
+</div>
+<div>
+    <span matBadge="5" matBadgeSize="large" matBadgeColor="accent">Notifications</span>
+</div>
+<div>
+    <span matBadge="5" matBadgeOverlap="false">Notifications</span>
+</div>
+
