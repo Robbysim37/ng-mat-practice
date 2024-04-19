@@ -1,0 +1,30 @@
+
+<!-- #bPancakes is the variable name you assign to some UI element, "metMenu"
+connects to the mat-menu component -->
+
+<!-- x and y position can take before/after/above/below -->
+
+<mat-menu #bPancakes="matMenu" xPosition="after" yPosition="above">
+    <button mat-menu-item [matMenuTriggerFor]="subMenu">frontend</button>
+    <button mat-menu-item>backend</button>
+</mat-menu>
+
+<button class="center" mat-flat-button [matMenuTriggerFor]="bPancakes">Menu</button>
+
+<mat-menu #subMenu="matMenu">
+    <button mat-menu-item>angular</button>
+    <button mat-menu-item>react</button>
+    <button mat-menu-item>view</button>
+</mat-menu>
+
+<!-- Dynamic content and not loading content until render -->
+
+<mat-menu #lazyMenu="matMenu">
+    <ng-template matMenuContent let-variableName="keyName">
+        <button mat-menu-item>settings</button>
+        <button mat-menu-item>logout {{variableName}}</button>
+    </ng-template>
+</mat-menu>
+
+<button mat-flat-button [matMenuTriggerData]="{keyName:'Rob'}" [matMenuTriggerFor]="lazyMenu">Rob</button>
+<button mat-flat-button [matMenuTriggerData]="{keyName:'Rckless'}" [matMenuTriggerFor]="lazyMenu">Rckless</button>
