@@ -17,6 +17,9 @@ import { SidenavComponent } from './sidenav/sidenav.component';
 import { FormsModule } from '@angular/forms';
 import { MenuComponent } from './menu/menu.component';
 import { ListComponent } from './list/list.component';
+import { GridlistComponent } from './gridlist/gridlist.component';
+import { ExpansionPanelComponent } from './expansion-panel/expansion-panel.component';
+import { CardsComponent } from './cards/cards.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +33,10 @@ import { ListComponent } from './list/list.component';
     NavbarComponent,
     SidenavComponent,
     MenuComponent,
-    ListComponent
+    ListComponent,
+    GridlistComponent,
+    ExpansionPanelComponent,
+    CardsComponent
   ],
   imports: [
     BrowserModule,
