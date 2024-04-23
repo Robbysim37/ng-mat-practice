@@ -1,0 +1,18 @@
+
+<!-- Can have mat-vertical-stepper as well
+linear and completed attributes create a locked step
+by step process -->
+
+<mat-horizontal-stepper linear>
+    <mat-step label="Shipping Address" completed="false">
+        <p>Shipping Details</p>
+    </mat-step>
+    <mat-step label="Billing Adress" completed="false">
+        <p>Billing Details</p>
+        <button mat-button matStepperPrevious>back</button>
+        <button mat-button matStepperNext>next</button>
+    </mat-step>
+    <mat-step label="Place Order" completed="false">
+        <p>Order Details</p>
+    </mat-step>
+</mat-horizontal-stepper>
